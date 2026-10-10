@@ -31,14 +31,14 @@ export default function Navbar({ onBookClick }) {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-ivory/95 backdrop-blur-md text-navy shadow-luxury border-b border-gold/20 py-3.5'
-          : 'bg-transparent text-ivory py-6'
+          ? 'bg-[#0B1422]/95 backdrop-blur-md text-ivory shadow-luxury border-b border-gold/30 py-3.5'
+          : 'bg-[#0B1422]/80 backdrop-blur-sm text-ivory border-b border-gold/15 py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         {/* Official ELIX Brand Logo */}
         <a href="#" className="flex items-center" aria-label="ELIX Dental & Aesthetic Clinic">
-          <CrestLogo className="h-10 sm:h-12 md:h-13" />
+          <CrestLogo className={scrolled ? "h-9 sm:h-11 md:h-12" : "h-10 sm:h-12 md:h-14"} />
         </a>
 
         {/* Desktop Links */}
@@ -47,9 +47,7 @@ export default function Navbar({ onBookClick }) {
             <a
               key={link.name}
               href={link.href}
-              className={`text-xs font-medium uppercase tracking-[0.2em] transition-colors duration-300 hover:text-gold relative py-1 group ${
-                scrolled ? 'text-navy/80 hover:text-gold' : 'text-ivory/80 hover:text-gold'
-              }`}
+              className="text-xs font-medium uppercase tracking-[0.2em] text-ivory/85 hover:text-gold transition-colors duration-300 relative py-1 group"
             >
               {link.name}
               <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-gold transition-all duration-300 group-hover:w-full" />
@@ -63,11 +61,7 @@ export default function Navbar({ onBookClick }) {
             href="https://wa.me/[NUMBER]"
             target="_blank"
             rel="noopener noreferrer"
-            className={`p-2.5 rounded-full border transition-all duration-300 ${
-              scrolled
-                ? 'border-gold/30 text-navy hover:bg-gold/10'
-                : 'border-gold/40 text-ivory hover:bg-gold/20'
-            }`}
+            className="p-2.5 rounded-full border border-gold/40 text-gold hover:bg-gold/20 transition-all duration-300"
             title="WhatsApp Consultation"
           >
             <Phone className="w-4 h-4 text-gold" />
@@ -75,11 +69,7 @@ export default function Navbar({ onBookClick }) {
 
           <button
             onClick={onBookClick}
-            className={`relative group overflow-hidden px-6 py-2.5 text-xs tracking-[0.2em] uppercase font-medium rounded-sm border transition-all duration-500 shadow-md ${
-              scrolled
-                ? 'bg-gold text-navy border-gold hover:bg-navy hover:text-ivory'
-                : 'bg-gold/90 text-navy border-gold hover:bg-gold hover:shadow-gold-glow'
-            }`}
+            className="relative group overflow-hidden px-6 py-2.5 text-xs tracking-[0.2em] uppercase font-medium rounded-sm border border-gold bg-gold text-navy hover:bg-gold-light hover:shadow-gold-glow transition-all duration-300"
           >
             <span className="relative z-10 flex items-center gap-2">
               <Calendar className="w-3.5 h-3.5" />
