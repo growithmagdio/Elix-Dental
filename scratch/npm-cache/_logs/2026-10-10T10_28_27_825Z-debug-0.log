@@ -1,0 +1,80 @@
+0 verbose cli C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VisualStudio\NodeJs\node.exe C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VisualStudio\NodeJs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.5.2
+2 info using node@v20.13.1
+3 timing npm:load:whichnode Completed in 2ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VisualStudio\NodeJs\node_modules\npm\npmrc Completed in 0ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:C:\Users\sazan\Downloads\ZDODA\Elite Dental clinic\.npmrc Completed in 0ms
+10 timing config:load:project Completed in 2ms
+11 timing config:load:file:C:\Users\sazan\.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VisualStudio\NodeJs\etc\npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:setEnvs Completed in 0ms
+16 timing config:load Completed in 9ms
+17 timing npm:load:configload Completed in 9ms
+18 timing config:load:flatten Completed in 2ms
+19 timing npm:load:mkdirpcache Completed in 2ms
+20 timing npm:load:mkdirplogs Completed in 0ms
+21 verbose title npm install
+22 verbose argv "install" "--cache" "./scratch/npm-cache" "--no-audit" "--no-fund"
+23 timing npm:load:setTitle Completed in 1ms
+24 timing npm:load:display Completed in 1ms
+25 verbose logfile logs-max:10 dir:C:\Users\sazan\Downloads\ZDODA\Elite Dental clinic\scratch\npm-cache\_logs\2026-10-10T10_28_27_825Z-
+26 verbose logfile C:\Users\sazan\Downloads\ZDODA\Elite Dental clinic\scratch\npm-cache\_logs\2026-10-10T10_28_27_825Z-debug-0.log
+27 timing npm:load:logFile Completed in 20ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 61ms
+31 timing arborist:ctor Completed in 1ms
+32 silly logfile done cleaning log files
+33 timing arborist:ctor Completed in 0ms
+34 timing idealTree:init Completed in 12ms
+35 timing idealTree:userRequests Completed in 0ms
+36 silly idealTree buildDeps
+37 silly fetch manifest @react-three/drei@^9.105.4
+38 http fetch GET 200 https://registry.npmjs.org/@react-three%2fdrei 4895ms (cache miss)
+39 silly fetch manifest @react-three/fiber@^8.16.6
+40 http fetch GET 200 https://registry.npmjs.org/@react-three%2ffiber 847ms (cache miss)
+41 silly fetch manifest @react-three/fiber@^8
+42 http fetch GET 200 https://registry.npmjs.org/@react-three%2ffiber 684ms (cache miss)
+43 silly fetch manifest expo@>=43.0
+44 http fetch GET 200 https://registry.npmjs.org/expo 1484ms (cache miss)
+45 silly fetch manifest @expo/metro-runtime@*
+46 http fetch GET 200 https://registry.npmjs.org/@expo%2fmetro-runtime 696ms (cache miss)
+47 silly fetch manifest react@^18.3.1
+48 http fetch GET 200 https://registry.npmjs.org/react 3863ms (cache miss)
+49 silly fetch manifest react-dom@^18.3.1
+50 http fetch GET 200 https://registry.npmjs.org/react-dom 8593ms (cache miss)
+51 silly fetch manifest react-native@*
+52 http fetch GET 200 https://registry.npmjs.org/react-native 5316ms (cache miss)
+53 silly fetch manifest @types/react@^18.3.3
+54 http fetch GET 200 https://registry.npmjs.org/@types%2freact 906ms (cache miss)
+55 silly fetch manifest @types/react@^19.1.1
+56 silly fetch manifest react@^19.2.3
+57 silly fetch manifest react-native-web@*
+58 http fetch GET 200 https://registry.npmjs.org/react-native-web 515ms (cache miss)
+59 silly fetch manifest react-native-webview@*
+60 http fetch GET 200 https://registry.npmjs.org/react-native-webview 576ms (cache miss)
+61 silly fetch manifest expo-asset@>=8.4
+62 http fetch GET 200 https://registry.npmjs.org/expo-asset 495ms (cache miss)
+63 silly fetch manifest expo-file-system@>=11.0
+64 http fetch GET 200 https://registry.npmjs.org/expo-file-system 358ms (cache miss)
+65 silly fetch manifest expo-gl@>=11.0
+66 http fetch GET 200 https://registry.npmjs.org/expo-gl 310ms (cache miss)
+67 silly fetch manifest react-native-reanimated@*
+68 http fetch GET 200 https://registry.npmjs.org/react-native-reanimated 912ms (cache miss)
+69 silly fetch manifest react-native-worklets@0.13.x
+70 http fetch GET 200 https://registry.npmjs.org/react-native-worklets 1040ms (cache miss)
+71 silly fetch manifest @babel/core@*
+72 http fetch GET 200 https://registry.npmjs.org/@babel%2fcore 514ms (cache miss)
+73 silly fetch manifest @react-native/metro-config@*
+74 http fetch GET 200 https://registry.npmjs.org/@react-native%2fmetro-config 1325ms (cache miss)
+75 silly fetch manifest three@^0.165.0
+76 http fetch GET 200 https://registry.npmjs.org/three 928ms (cache miss)
+77 silly fetch manifest clsx@^2.1.1
+78 http fetch GET 200 https://registry.npmjs.org/clsx 816ms (cache miss)
+79 silly fetch manifest framer-motion@^11.2.10

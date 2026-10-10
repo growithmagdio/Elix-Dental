@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Jost', sans-serif;
+    color-scheme: dark light;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+  }
+}
+
+/* Custom Paper Texture Overlay for Ivory Sections */
+.paper-texture {
+  background-image: radial-gradient(rgba(184, 151, 90, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Cathedral Arch Mask */
+.arch-mask {
+  clip-path: ellipse(50% 50% at 50% 50%);
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+/* Gold Hairline Divider */
+.gold-hairline {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(184, 151, 90, 0.5) 50%, transparent 100%);
+}
+
+/* Gold Gradient Text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F6F1E7 0%, #B8975A 50%, #E6D5B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B1420;
+}
+::-webkit-scrollbar-thumb {
+  background: #B8975A;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #CBA86B;
+}
+
+/* Keyframes for subtle ambient animations */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+.animate-float-slow {
+  animation: floatSlow 8s ease-in-out infinite;
+}
