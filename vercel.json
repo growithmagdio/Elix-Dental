@@ -1,4 +1,12 @@
 {
+  "buildCommand": "vite build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/((?!images/|assets/|favicon.svg|.*\\.(?:avif|webp|jpg|jpeg|png|svg|ico|css|js)).*)",
+      "destination": "/index.html"
+    }
+  ],
   "headers": [
     {
       "source": "/images/(.*)",
@@ -10,7 +18,7 @@
       ]
     },
     {
-      "source": "/(.*).(avif|webp|jpg|jpeg|png|svg|woff2)",
+      "source": "/assets/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
