@@ -11,14 +11,29 @@ export default function AboutSection() {
             <div className="relative w-full max-w-md aspect-[4/5] rounded-t-full border border-gold/40 p-2 bg-ivory shadow-luxury group">
               {/* Inner Arch Container */}
               <div className="relative w-full h-full rounded-t-full overflow-hidden">
-                <img
-                  src="/images/about.webp"
-                  alt="ELIX Dental & Aesthetic Consultation Suite"
-                  width="600"
-                  height="750"
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
+                <picture className="w-full h-full block">
+                  <source
+                    type="image/avif"
+                    srcSet="/images/about-sm.avif 480w, /images/about-md.avif 800w, /images/about.avif 1200w"
+                    sizes="(max-width: 640px) 480px, (max-width: 1024px) 600px, 600px"
+                  />
+                  <source
+                    type="image/webp"
+                    srcSet="/images/about-sm.webp 480w, /images/about-md.webp 800w, /images/about.webp 1200w"
+                    sizes="(max-width: 640px) 480px, (max-width: 1024px) 600px, 600px"
+                  />
+                  <img
+                    src="/images/about-md.jpg"
+                    srcSet="/images/about-sm.jpg 480w, /images/about-md.jpg 800w, /images/about.jpg 1200w"
+                    sizes="(max-width: 640px) 480px, (max-width: 1024px) 600px, 600px"
+                    alt="ELIX Dental & Aesthetic Consultation Suite"
+                    width="600"
+                    height="750"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </picture>
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/30 via-transparent to-transparent opacity-50" />
               </div>
 

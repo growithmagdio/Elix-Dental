@@ -71,15 +71,30 @@ export default function BeforeAfterSection() {
             className="relative w-full h-full cursor-ew-resize"
           >
             {/* After Image */}
-            <img
-              src="/images/smile-after.webp"
-              alt="After Smile Transformation"
-              width="900"
-              height="562"
-              loading="lazy"
-              className="absolute inset-0 w-full h-full object-cover pointer-events-none"
-            />
-            <span className="absolute top-4 right-4 px-3 py-1 bg-navy/80 backdrop-blur-md text-gold text-xs uppercase tracking-widest font-sans border border-gold/30 rounded-sm">
+            <picture className="absolute inset-0 w-full h-full block pointer-events-none">
+              <source
+                type="image/avif"
+                srcSet="/images/smile-after-sm.avif 480w, /images/smile-after-md.avif 800w, /images/smile-after.avif 1200w"
+                sizes="(max-width: 640px) 480px, 900px"
+              />
+              <source
+                type="image/webp"
+                srcSet="/images/smile-after-sm.webp 480w, /images/smile-after-md.webp 800w, /images/smile-after.webp 1200w"
+                sizes="(max-width: 640px) 480px, 900px"
+              />
+              <img
+                src="/images/smile-after-md.jpg"
+                srcSet="/images/smile-after-sm.jpg 480w, /images/smile-after-md.jpg 800w, /images/smile-after.jpg 1200w"
+                sizes="(max-width: 640px) 480px, 900px"
+                alt="After Smile Transformation"
+                width="900"
+                height="562"
+                loading="lazy"
+                decoding="async"
+                className="w-full h-full object-cover pointer-events-none"
+              />
+            </picture>
+            <span className="absolute top-4 right-4 px-3 py-1 bg-navy/80 backdrop-blur-md text-gold text-xs uppercase tracking-widest font-sans border border-gold/30 rounded-sm z-10">
               After Treatment
             </span>
 
@@ -88,16 +103,31 @@ export default function BeforeAfterSection() {
               className="absolute inset-0 h-full overflow-hidden pointer-events-none"
               style={{ width: `${sliderPos}%` }}
             >
-              <img
-                src="/images/smile-before.webp"
-                alt="Before Smile"
-                width="900"
-                height="562"
-                loading="lazy"
-                className="absolute top-0 left-0 h-full max-w-none object-cover"
-                style={{ width: containerRef.current ? `${containerRef.current.offsetWidth}px` : '100%' }}
-              />
-              <span className="absolute top-4 left-4 px-3 py-1 bg-navy/80 backdrop-blur-md text-ivory text-xs uppercase tracking-widest font-sans border border-gold/30 rounded-sm">
+              <picture className="absolute top-0 left-0 h-full block" style={{ width: containerRef.current ? `${containerRef.current.offsetWidth}px` : '100%' }}>
+                <source
+                  type="image/avif"
+                  srcSet="/images/smile-before-sm.avif 480w, /images/smile-before-md.avif 800w, /images/smile-before.avif 1200w"
+                  sizes="(max-width: 640px) 480px, 900px"
+                />
+                <source
+                  type="image/webp"
+                  srcSet="/images/smile-before-sm.webp 480w, /images/smile-before-md.webp 800w, /images/smile-before.webp 1200w"
+                  sizes="(max-width: 640px) 480px, 900px"
+                />
+                <img
+                  src="/images/smile-before-md.jpg"
+                  srcSet="/images/smile-before-sm.jpg 480w, /images/smile-before-md.jpg 800w, /images/smile-before.jpg 1200w"
+                  sizes="(max-width: 640px) 480px, 900px"
+                  alt="Before Smile"
+                  width="900"
+                  height="562"
+                  loading="lazy"
+                  decoding="async"
+                  className="h-full max-w-none object-cover"
+                  style={{ width: containerRef.current ? `${containerRef.current.offsetWidth}px` : '100%' }}
+                />
+              </picture>
+              <span className="absolute top-4 left-4 px-3 py-1 bg-navy/80 backdrop-blur-md text-ivory text-xs uppercase tracking-widest font-sans border border-gold/30 rounded-sm z-10">
                 Before
               </span>
             </div>

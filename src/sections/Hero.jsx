@@ -59,15 +59,30 @@ export default function Hero({ onBookClick }) {
             <div className="relative w-full max-w-lg aspect-[4/3] sm:aspect-[14/10] rounded-sm p-2 border border-gold/30 bg-navy-surface/50 shadow-luxury group">
               {/* Inner Frame */}
               <div className="relative w-full h-full rounded-sm overflow-hidden border border-gold/20">
-                <img
-                  src="/images/dental-hero.webp"
-                  alt="ELIX Dental & Aesthetic Clinique Interior"
-                  width="800"
-                  height="571"
-                  loading="eager"
-                  fetchPriority="high"
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                />
+                <picture className="w-full h-full block">
+                  <source
+                    type="image/avif"
+                    srcSet="/images/dental-hero-sm.avif 480w, /images/dental-hero-md.avif 800w, /images/dental-hero.avif 1200w"
+                    sizes="(max-width: 640px) 480px, (max-width: 1024px) 800px, 800px"
+                  />
+                  <source
+                    type="image/webp"
+                    srcSet="/images/dental-hero-sm.webp 480w, /images/dental-hero-md.webp 800w, /images/dental-hero.webp 1200w"
+                    sizes="(max-width: 640px) 480px, (max-width: 1024px) 800px, 800px"
+                  />
+                  <img
+                    src="/images/dental-hero-md.jpg"
+                    srcSet="/images/dental-hero-sm.jpg 480w, /images/dental-hero-md.jpg 800w, /images/dental-hero.jpg 1200w"
+                    sizes="(max-width: 640px) 480px, (max-width: 1024px) 800px, 800px"
+                    alt="ELIX Dental & Aesthetic Clinique Interior"
+                    width="800"
+                    height="571"
+                    loading="eager"
+                    fetchPriority="high"
+                    decoding="sync"
+                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                  />
+                </picture>
                 {/* Subtle Lighting Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent opacity-60" />
               </div>

@@ -10,6 +10,7 @@ export default function DoctorsSection() {
       qualifications: 'Cosmetic & Conservative Dentistry',
       bio: 'Specializing in microscopic porcelain veneers, smile rehabilitation design, and conservative ceramic restorations.',
       image: '/images/doctor1.webp',
+      baseName: '/images/doctor1',
     },
     {
       id: 'doc2',
@@ -18,6 +19,7 @@ export default function DoctorsSection() {
       qualifications: 'Implantology & Facial Harmonization',
       bio: 'Expert in biological dental implants, bone preservation, and non-surgical facial sculpture tailored to natural facial balance.',
       image: '/images/doctor2.webp',
+      baseName: '/images/doctor2',
     },
   ];
 
@@ -49,14 +51,29 @@ export default function DoctorsSection() {
             >
               {/* Image Frame */}
               <div className="relative w-full aspect-[4/5] rounded-sm overflow-hidden mb-6 border border-gold/20">
-                <img
-                  src={doc.image}
-                  alt={doc.name}
-                  width="500"
-                  height="625"
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
+                <picture className="w-full h-full block">
+                  <source
+                    type="image/avif"
+                    srcSet={`${doc.baseName}-sm.avif 480w, ${doc.baseName}-md.avif 800w, ${doc.baseName}.avif 1200w`}
+                    sizes="(max-width: 640px) 480px, 500px"
+                  />
+                  <source
+                    type="image/webp"
+                    srcSet={`${doc.baseName}-sm.webp 480w, ${doc.baseName}-md.webp 800w, ${doc.baseName}.webp 1200w`}
+                    sizes="(max-width: 640px) 480px, 500px"
+                  />
+                  <img
+                    src={`${doc.baseName}-md.jpg`}
+                    srcSet={`${doc.baseName}-sm.jpg 480w, ${doc.baseName}-md.jpg 800w, ${doc.baseName}.jpg 1200w`}
+                    sizes="(max-width: 640px) 480px, 500px"
+                    alt={doc.name}
+                    width="500"
+                    height="625"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </picture>
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent opacity-80" />
                 
                 <div className="absolute bottom-4 left-4 right-4 text-xs font-sans text-gold uppercase tracking-wider flex items-center gap-2">
