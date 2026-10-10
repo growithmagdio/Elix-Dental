@@ -38,60 +38,23 @@ export default function IntroLoader({ onComplete }) {
         stage === 'lifting' ? '-translate-y-full opacity-90' : 'translate-y-0 opacity-100'
       }`}
     >
-      <div className="relative flex flex-col items-center">
-        {/* SVG Crest Line Drawing */}
-        <div className="relative w-28 h-28 flex items-center justify-center">
-          <svg viewBox="0 0 100 100" className="w-full h-full text-gold">
-            {/* Outer Circle line animation */}
-            <circle
-              cx="50"
-              cy="50"
-              r="44"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              className="animate-draw-circle"
-              style={{
-                strokeDasharray: 280,
-                strokeDashoffset: stage === 'drawing' ? 280 : 0,
-                transition: 'stroke-dashoffset 1.3s ease-in-out',
-              }}
-            />
-            {/* Inner Ring */}
-            <circle
-              cx="50"
-              cy="50"
-              r="38"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="0.75"
-              strokeDasharray="4 2"
-              opacity="0.7"
-            />
-          </svg>
-
-          {/* Monogram E stroke */}
-          <span
-            className={`absolute font-serif text-4xl text-gold font-light transition-opacity duration-700 ${
-              stage === 'drawing' ? 'opacity-80 scale-95' : 'opacity-100 scale-100'
+      <div className="relative flex flex-col items-center px-6">
+        {/* Official ELIX Brand Logo Animation */}
+        <picture className="inline-block transition-all duration-700">
+          <source type="image/webp" srcSet="/images/elix-logo-full.webp" />
+          <img
+            src="/images/elix-logo-full.png"
+            alt="ELIX Dental & Aesthetic Clinic"
+            width="300"
+            height="174"
+            className={`w-64 sm:w-80 h-auto object-contain transition-all duration-1000 ${
+              stage === 'drawing' ? 'opacity-90 scale-95' : 'opacity-100 scale-100'
             }`}
-          >
-            E
-          </span>
-        </div>
-
-        {/* Title Fade */}
-        <div className="mt-6 flex flex-col items-center text-center">
-          <span className="font-serif text-xl tracking-[0.25em] uppercase text-ivory">
-            ELIX
-          </span>
-          <span className="text-[10px] font-sans tracking-[0.35em] uppercase text-gold/80 mt-1">
-            Dental & Aesthetic Clinique
-          </span>
-        </div>
+          />
+        </picture>
 
         {/* Fine Gold Line Divider */}
-        <div className="mt-8 w-24 h-[1px] bg-gradient-to-r from-transparent via-gold to-transparent" />
+        <div className="mt-8 w-32 h-[1px] bg-gradient-to-r from-transparent via-gold to-transparent" />
       </div>
     </div>
   );

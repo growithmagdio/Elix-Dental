@@ -13,7 +13,9 @@ export default function Footer() {
           
           {/* Brand & Crest Column */}
           <div className="md:col-span-4 flex flex-col items-start">
-            <CrestLogo className="w-12 h-12" textColor="text-ivory" />
+            <a href="#" className="inline-block" aria-label="ELIX Dental & Aesthetic Clinic">
+              <CrestLogo variant="footer" />
+            </a>
             
             <p className="font-sans text-xs text-ivory/70 font-light leading-relaxed mt-6 mb-8 max-w-sm">
               Elix Dental &amp; Aesthetic Clinique delivers bespoke porcelain veneer design, precision implants, and facial sculpting in an atmosphere of quiet royalty.

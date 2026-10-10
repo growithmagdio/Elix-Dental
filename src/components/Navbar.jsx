@@ -36,9 +36,9 @@ export default function Navbar({ onBookClick }) {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-        {/* Crest Logo */}
-        <a href="#" className="flex items-center">
-          <CrestLogo textColor={scrolled ? 'text-navy' : 'text-ivory'} />
+        {/* Official ELIX Brand Logo */}
+        <a href="#" className="flex items-center" aria-label="ELIX Dental & Aesthetic Clinic">
+          <CrestLogo className="h-10 sm:h-12 md:h-13" />
         </a>
 
         {/* Desktop Links */}
