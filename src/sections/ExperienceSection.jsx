@@ -38,11 +38,11 @@ export default function ExperienceSection() {
         {/* Section Header */}
         <div className="flex flex-col items-center text-center mb-16">
           <span className="text-xs uppercase tracking-ultra text-gold font-medium mb-3">
-            The Elix Protocol
+            The Panacea Protocol
           </span>
 
           <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-light tracking-tight text-navy mb-6">
-            The <span className="italic font-normal text-gold">Elix Experience</span>
+            The <span className="italic font-normal text-gold">Panacea Experience</span>
           </h2>
 
           <p className="font-sans text-base text-navy/70 max-w-xl font-light leading-relaxed">
@@ -115,7 +115,7 @@ export default function ExperienceSection() {
               </div>
 
               <div className="relative z-10 flex items-center justify-between pt-6 border-t border-gold/20">
-                <span className="text-xs text-ivory/60 uppercase tracking-widest font-sans">Elix Standard</span>
+                <span className="text-xs text-ivory/60 uppercase tracking-widest font-sans">Panacea Standard</span>
                 <span className="text-xs text-gold font-serif italic">Restrained Perfection</span>
               </div>
             </div>

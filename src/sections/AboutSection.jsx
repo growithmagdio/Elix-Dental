@@ -26,7 +26,7 @@ export default function AboutSection() {
                     src="/images/about-md.jpg"
                     srcSet="/images/about-sm.jpg 480w, /images/about-md.jpg 800w, /images/about.jpg 1200w"
                     sizes="(max-width: 640px) 480px, (max-width: 1024px) 600px, 600px"
-                    alt="ELIX Dental & Aesthetic Consultation Suite"
+                    alt="PANACEA DENTAL CARE Consultation Suite"
                     width="600"
                     height="750"
                     loading="lazy"
@@ -37,11 +37,11 @@ export default function AboutSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/30 via-transparent to-transparent opacity-50" />
               </div>
 
-              {/* Ornamental Gold Monogram Badge */}
+              {/* Ornamental Gold Monogram Badge - PANACEA Tooth & Leaf */}
               <div className="absolute -bottom-5 -right-5 w-20 h-20 rounded-full bg-navy text-gold p-1 shadow-gold-glow flex items-center justify-center border border-gold/50">
-                <div className="w-full h-full rounded-full border border-gold/30 flex flex-col items-center justify-center text-center">
-                  <span className="font-serif text-xl font-light leading-none">E</span>
-                  <span className="text-[7px] tracking-[0.2em] uppercase font-sans mt-0.5">ELIX</span>
+                <div className="w-full h-full rounded-full border border-gold/30 flex flex-col items-center justify-center text-center p-2 bg-[#061710] overflow-hidden">
+                  <img src="/images/panacea-emblem.png" alt="PANACEA DENTAL CARE" className="w-8 h-8 object-contain" />
+                  <span className="text-[7px] tracking-[0.2em] uppercase font-sans mt-0.5 text-gold font-medium">PANACEA</span>
                 </div>
               </div>
             </div>
@@ -60,7 +60,7 @@ export default function AboutSection() {
             <div className="w-16 h-[1px] bg-gold mb-6" />
 
             <p className="font-sans text-base text-navy/80 font-light leading-relaxed mb-6">
-              At ELIX Dental &amp; Aesthetic Clinique, we reject the impersonal, sterile environment of traditional practices. Inspired by the quiet dignity of timeless heritage suites, our clinique offers an environment of calm, privacy, and clinical mastery.
+              At PANACEA DENTAL CARE, we reject the impersonal, sterile environment of traditional practices. Inspired by the quiet dignity of timeless heritage suites, our clinic offers an environment of calm, privacy, and clinical mastery.
             </p>
 
             <p className="font-sans text-sm md:text-base text-navy/70 font-light leading-relaxed mb-8">
