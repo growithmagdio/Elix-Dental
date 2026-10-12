@@ -31,13 +31,13 @@ export default function Navbar({ onBookClick }) {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-[#0B1422]/95 backdrop-blur-md text-ivory shadow-luxury border-b border-gold/30 py-3.5'
-          : 'bg-[#0B1422]/80 backdrop-blur-sm text-ivory border-b border-gold/15 py-5'
+          ? 'bg-[#071710]/95 backdrop-blur-md text-ivory shadow-luxury border-b border-gold/30 py-3.5'
+          : 'bg-[#071710]/85 backdrop-blur-sm text-ivory border-b border-gold/15 py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
-        {/* Official ELIX Brand Logo */}
-        <a href="#" className="flex items-center" aria-label="ELIX Dental & Aesthetic Clinic">
+        {/* Official PANACEA Brand Logo */}
+        <a href="#" className="flex items-center" aria-label="PANACEA DENTAL CARE">
           <CrestLogo className={scrolled ? "h-9 sm:h-11 md:h-12" : "h-10 sm:h-12 md:h-14"} />
         </a>
 
@@ -96,7 +96,7 @@ export default function Navbar({ onBookClick }) {
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-navy/98 backdrop-blur-xl border-b border-gold/20 px-6 py-8 text-ivory animate-fadeIn">
+        <div className="lg:hidden bg-navy-dark/98 backdrop-blur-xl border-b border-gold/20 px-6 py-8 text-ivory animate-fadeIn">
           <nav className="flex flex-col gap-5 text-center">
             {navLinks.map((link) => (
               <a

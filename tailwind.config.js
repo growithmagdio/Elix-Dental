@@ -7,23 +7,37 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Deep Forest Night (Primary brand dark background)
         navy: {
-          DEFAULT: '#0B1420',
-          dark: '#070D15',
-          light: '#142132',
-          surface: '#121E2E',
+          DEFAULT: '#071710',
+          dark: '#030E0A',
+          light: '#0D2319',
+          surface: '#0A1E16',
         },
+        // Forest Green Palette (Brand identity primary)
+        forest: {
+          DEFAULT: '#0E3622',
+          deep: '#021B0F',
+          dark: '#061D12',
+          surface: '#0D2D1E',
+          light: '#185437',
+          emerald: '#1C6B45',
+          muted: 'rgba(14, 54, 34, 0.3)',
+        },
+        // Warm Ivory Palette (Brand identity light)
         ivory: {
-          DEFAULT: '#F6F1E7',
+          DEFAULT: '#F7F3EA',
           light: '#FCF9F3',
-          dark: '#EBE4D5',
+          dark: '#ECE4D4',
         },
+        // Metallic Gold Palette (Brand identity accent)
         gold: {
-          DEFAULT: '#B8975A',
-          light: '#CBA86B',
-          dark: '#967941',
-          muted: 'rgba(184, 151, 90, 0.25)',
-          glow: 'rgba(184, 151, 90, 0.15)',
+          DEFAULT: '#C5A059',
+          light: '#D8B875',
+          dark: '#9C7A39',
+          bright: '#DFC17B',
+          muted: 'rgba(197, 160, 89, 0.25)',
+          glow: 'rgba(197, 160, 89, 0.18)',
         },
         champagne: {
           DEFAULT: '#E6D5B8',
@@ -40,9 +54,10 @@ export default {
         ultra: '0.35em',
       },
       boxShadow: {
-        'gold-glow': '0 0 30px rgba(184, 151, 90, 0.2)',
-        'gold-border': '0 0 0 1px rgba(184, 151, 90, 0.4)',
-        'luxury': '0 20px 50px rgba(11, 20, 32, 0.08)',
+        'gold-glow': '0 0 30px rgba(197, 160, 89, 0.2)',
+        'gold-border': '0 0 0 1px rgba(197, 160, 89, 0.4)',
+        'forest-glow': '0 0 30px rgba(14, 54, 34, 0.35)',
+        'luxury': '0 20px 50px rgba(3, 14, 10, 0.12)',
       },
     },
   },

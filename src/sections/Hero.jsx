@@ -5,7 +5,7 @@ export default function Hero({ onBookClick }) {
   return (
     <section className="relative w-full min-h-[90vh] flex items-center bg-navy text-ivory overflow-hidden pt-28 pb-16 lg:pt-36 lg:pb-24">
       {/* Background Subtle Gradient Vignette */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(184,151,90,0.08)_0%,transparent_70%)] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(197,160,89,0.08)_0%,transparent_70%)] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
@@ -16,7 +16,7 @@ export default function Hero({ onBookClick }) {
             <div className="inline-flex items-center gap-3 mb-6">
               <span className="w-6 h-[1px] bg-gold" />
               <span className="text-xs uppercase tracking-ultra text-gold font-medium">
-                Dental &amp; Aesthetic Clinique
+                PANACEA DENTAL CARE
               </span>
             </div>
 
@@ -74,7 +74,7 @@ export default function Hero({ onBookClick }) {
                     src="/images/dental-hero-md.jpg"
                     srcSet="/images/dental-hero-sm.jpg 480w, /images/dental-hero-md.jpg 800w, /images/dental-hero.jpg 1200w"
                     sizes="(max-width: 640px) 480px, (max-width: 1024px) 800px, 800px"
-                    alt="ELIX Dental & Aesthetic Clinique Interior"
+                    alt="PANACEA DENTAL CARE Grand Reception Lounge"
                     width="800"
                     height="571"
                     loading="eager"
@@ -87,10 +87,10 @@ export default function Hero({ onBookClick }) {
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent opacity-60" />
               </div>
 
-              {/* Gold Crest Accent Mark */}
+              {/* Gold Crest Accent Mark - PANACEA Official Tooth & Leaf Emblem */}
               <div className="absolute -bottom-4 -left-4 w-16 h-16 rounded-full bg-navy text-gold p-1 border border-gold/40 shadow-gold-glow flex items-center justify-center">
-                <div className="w-full h-full rounded-full border border-gold/20 flex items-center justify-center">
-                  <span className="font-serif text-xl font-light text-gold">E</span>
+                <div className="w-full h-full rounded-full border border-gold/20 flex items-center justify-center p-2.5 bg-[#061710] overflow-hidden">
+                  <img src="/images/panacea-emblem.png" alt="PANACEA DENTAL CARE Emblem" className="w-full h-full object-contain" />
                 </div>
               </div>
             </div>
